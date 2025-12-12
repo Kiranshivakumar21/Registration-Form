@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="./form.css">
+<body>
+
+    <form action="">
+
+        <div class="outer"> 
+        
+            <div class="frm">
+
+            <div class="heading"><p class="heading_ptag"><b>Registeration Form</b></p></div>
+
+            <div class="fname"> 
+                <p class="fname_ptag">First Name:</p>
+                <div class="fname_input">
+                    <input type="text" placeholder="Enter Your First Name" id="fname" minlength="3" required>
+                </div>
+            </div>
+
+            <div class="lname">
+                <p class="lname_ptag">Last Name:</p>
+                <div class="lname_input">
+                    <input type="text" placeholder="Enter Your Last Name" id="lname">
+                </div>
+            </div>
+
+            <div class="mobile">
+                <p class="mobile_ptag">Mobile Number:</p>
+                <div class="mobile_input">
+                    <input type="number"  placeholder="Enter Your Mobile Number" id="mobile"  minlength="10" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <div class="email"> 
+                <p class="email_ptag">E-Mail:</p>
+                <div class="email_input">
+                    <input type="email" placeholder="Enter Your E-Mail" id="mail" required>
+                </div>
+            </div>
+
+            <div class="pw">
+                <p class="pw_ptag">Password:</p>
+                <div class="pw_input">
+                    <input type="password"  id="pw" required>
+                </div>
+             </div>
+
+            <div class="rpw">
+                <p class="rpw_ptag">Re- Type Your Password:</p >
+                <div class="rpw_input">
+                    <input type="password"  id="rpw" required>
+                </div>
+            </div>
+
+            <div class="gender">
+                <p class="gender_ptag">Gender</p>
+
+                <select name="Gender" id="gender" required>
+                <option value="Male" selected>Male</option>
+                <option value="Female" >Female</option>
+                <option value="Others" >Others</option>
+                </select>
+
+             </div>
+
+             <div class="btn">
+                <button type="submit">SUBMIT</button>
+                
+                
+            </div>
+                
+
+                
+                
+         </div>
+
+        </div>
+    </form>
+    <script>
+       let k = document.getElementsByClassName("btn")[0];
+        k.addEventListener("click", function() {
+            alert("Your Form Is Submitted!")
+        })
+</script>
+</body>
+
+</html>
